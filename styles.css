@@ -5,7 +5,7 @@ body{
 h1{
     font-family: 'Abril Fatface', cursive;
     color: #30182A;
-    font-size: 3.4em;
+    font-size: 4.5em;
 }
 
 article{
@@ -17,7 +17,7 @@ header{
 }
 
 .text-description{
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 nav{
@@ -28,7 +28,7 @@ nav{
 
 nav img {
     width: 60px;
-    margin: 0 40px;
+    margin: 0 80px;
 }
 
 nav ul{
@@ -45,25 +45,31 @@ nav ul li{
 }
 
 section img{
-    width: 70%;
+    width: 90%;
 }
 
 .main-button{
-    padding: 12px 35px;
-    color: #30182A;
+    padding: 12px 15px;
+    color: #30182a;
     font-weight: 800;
     font-size: 0.7em;
     border-radius: 7px;
-    width: 140px;
+    width: 160px;
+    text-transform: uppercase;
 }
 
 #button-hire{
- background-color: #FF6B72;
- border: 1px solid #FF6B72;
+    background-color: #FF6B72;
+    border: 1px solid #FF6B72;
 }
 
 #button-works{
     background-color: transparent;
-    border: 1px solid #30182A;
+    border: 1px solid #30182a;
     margin-left: 10px;
+}
+
+.social-network{
+    position: absolute;
+    bottom: 50px;
 }
