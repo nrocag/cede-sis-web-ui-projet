@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Web replica UI</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+
+        const Menu = () => {
+                return <header class="container">
+                    <nav>
+                        <ul>
+                            <li>Galery</li>
+                            <li>Artist</li>
+                            <li>Jobs</li>
+                            <li>Blogs</li>
+                        </ul>
+                        <img alt="Logo" src="images/logo.png" />
+                        <ul>
+                            <li>Pricing</li>
+                            <li>Faq</li>
+                            <li>Tools</li>
+                            <li>Login</li>
+                        </ul>
+                    </nav>
+                </header>
+        }
+        
+        const Texto = () => {
+                return <div class="col-md-4">
+                    <div class="row">
+                        <h1>The Art of Hiring</h1>
+                        <p class="text-description">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                            survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                        <div class="row">
+                            <button id="button-hire" class="main-button">Hire Artist</button>
+                            <button id="button-works" class="main-button"><i class="fa fa-play"></i> How it works</button>
+                        </div>
+                    </div>
+                    <div class="row social-network">
+                        <i class="col-md-1 fa fa-facebook"></i>
+                        <i class="col-md-1 fa fa-twitter"></i>
+                        <i class="col-md-1 fa fa-linkedin"></i>
+                        <i class="col-md-1 fa fa-maxcdn"></i>
+                        <i class="col-md-1 fa fa-instagram"></i>
+                    </div>
+                </div> 
+        }
+        
+        const Imagen = () => { 
+            return  <div class="col-md-6">
+                        <img alt="Logo" src="images/hiringartist.png" />
+                    </div>
+        }
+
+        const Principal = () => {
+                return <div>
+                    <Menu />
+                    <article class="container">
+                        <section class="row">
+                            <div class="col-md-2">
+                            </div>
+                            <Texto />
+                            <Imagen />
+                        </section>
+                    </article>
+                </div>
+        }
+        
+        ReactDOM.render(
+            <Principal />, 
+            document.getElementById("root"));
+    </script>
+</body>
+
+</html>
